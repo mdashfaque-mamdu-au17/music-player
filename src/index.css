@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #252525;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.rhap_container .rhap_container *:focus {
+  outline: none !important;
+}
+.rhap_container {
+  background: #1F1F1F !important;
+
+  border: none !important;
+  box-shadow: none !important;
+  display: flex !important;
+  
+}
+
+.rhap_progress-container {  
+  
+}
+
+.rhap_controls-section {
+  width: 256px;
+ 
+  align-self: center;
+}
+
+.rhap_volume-container {
+  display: none;
+  
+}
+
+.rhap_volume-button {
+  display: none;
+}
+.rhap_volume-bar  {
+  display: none;
+  width: 117px !important;
+}
+
+.rhap_time, .rhap_total-time {
+  display: none;
+  color: #6B7280 !important;
+}
+
+.rhap_repeat-button {
+  display: none;
+}
+
+.rhap_progress-bar  {
+  background-color: #F3F4F6 !important;
+}
+
+.rhap_progress-filled {
+  background-color: #ADFF00 !important;
+}
+
+.rhap_progress-indicator {
+  height: 5px !important;
+  width: 5px !important;
+  box-shadow: none !important;
+  border-radius: none !important;
+  top: 0 !important;
+  margin-left: 0 !important;
+  background-color: #ADFF00 !important;
+}
+
+.rhap_download-progress {
+  background-color: #F3F4F6;
+}
+
+.rhap_volume-bar {
+  background-color: #8C8C8C !important;
+  height: 5px !important;
+}
+/* .rhap_volume-indicator {
+  height: 5px !important;
+  width: 5px !important;
+  box-shadow: none !important;
+  border-radius: none !important;
+  top: 0 !important;
+  margin-left: 0 !important;
+  background-color: #8C8C8C !important;
+} */
+
+@media screen and (min-width: 1024px) {
+  .rhap_volume-container {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 21px;
+    transform: translate(0, -50%);
+  }
+
+  .rhap_volume-button {
+    display: block;
+  }
+
+  .rhap_volume-bar  {
+    display: block;
+    width: 117px !important;
+  }
+  .rhap_repeat-button {
+    display: block;
+  }
+
+  .rhap_time, .rhap_total-time {
+    display: block;
+    color: #6B7280 !important;
+  }
+  
+}
